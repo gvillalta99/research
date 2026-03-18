@@ -25,3 +25,5 @@
 {"run":23,"commit":"a8d930e","metric":3503,"metrics":{},"status":"keep","description":"Restored the Maximum Window Anchoring algorithm which extracted 3503 claims","timestamp":1773852117688,"segment":1}
 {"type":"config","name":"Claims Structuring Optimization","metricName":"structured_claims","metricUnit":"","bestDirection":"higher"}
 {"run":24,"commit":"e5ec21a","metric":8,"metrics":{},"status":"keep","description":"Baseline parsing using basic heuristic for players and strategies","timestamp":1773852531171,"segment":2}
+{"run":25,"commit":"4a26932","metric":80,"metrics":{},"status":"keep","description":"Use kimi-k2.5 to parse claims. Parsed 80 out of 100 successfully.","timestamp":1773852964507,"segment":2}
+{"run":26,"commit":"Prmpt2","metric":80,"metrics":{},"status":"discard","description":"Refined prompt to force raw json, no metric change (80/100 claims parsed)","timestamp":1773853295516,"segment":2}
