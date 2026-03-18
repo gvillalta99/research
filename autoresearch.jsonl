@@ -19,3 +19,6 @@
 {"run":17,"commit":"bd9e02f","metric":1538,"metrics":{},"status":"keep","description":"Baseline for high quality claims requiring both strategic and causal markers","timestamp":1773850371595,"segment":1}
 {"run":18,"commit":"ebe3295","metric":1883,"metrics":{},"status":"keep","description":"Explicitly anchored extraction on pairs of strategic and causal markers within 40 words","timestamp":1773850550884,"segment":1}
 {"run":19,"commit":"8dcfaa8","metric":3080,"metrics":{},"status":"keep","description":"Expanded marker lists to extract more combinations","timestamp":1773851157806,"segment":1}
+{"run":20,"commit":"1d3e82b","metric":3503,"metrics":{},"status":"keep","description":"Increased search window to 46 words, catching more dispersed marker pairs","timestamp":1773851330403,"segment":1}
+{"run":21,"commit":"NatSent","metric":1334,"metrics":{},"status":"discard","description":"Extracted natural sentences but resulted in fewer claims because sentences are often too long or markers are across larger boundaries","timestamp":1773851518132,"segment":1}
+{"run":22,"commit":"SlidWin","metric":1228,"metrics":{},"status":"discard","description":"Used sliding window approach but produced fewer claims than anchoring","timestamp":1773851689565,"segment":1}
