@@ -37,3 +37,4 @@
 {"run":33,"commit":"49faf84","metric":3964,"metrics":{},"status":"keep","description":"Baseline full-corpus parser using gpt-5.4-mini structured outputs on all extracted claims with batch_size=20 and concurrency=5.","timestamp":1773856022977,"segment":3}
 {"type":"config","name":"Full Corpus Structuring Runtime","metricName":"total_s","metricUnit":"s","bestDirection":"lower"}
 {"run":34,"commit":"4e03d25","metric":277.4,"metrics":{"structured_claims_full":3964},"status":"keep","description":"Baseline runtime on full corpus with batch_size=20 and concurrency=5; maintained 3964/3964 structured claims.","timestamp":1773856326932,"segment":4}
+{"run":35,"commit":"d0d6882","metric":84.4,"metrics":{"structured_claims_full":3964},"status":"keep","description":"Raised concurrency from 5 to 10; full-corpus coverage stayed at 3964/3964 and runtime dropped sharply.","timestamp":1773856428339,"segment":4}
