@@ -1,107 +1,64 @@
 # Research Project Management
 
-Estrutura centralizada para gerenciar projetos de pesquisa com integração de agentes IA para análise de referências bibliográficas e execução de estudos sistemáticos.
+Estrutura de trabalho para pesquisa assistida por agentes, com separação clara entre projetos, corpus bibliográfico, triagem e outputs.
 
-## 📁 Estrutura do Repositório
+## Estrutura
 
-```
+```text
 research/
-├── projects/                    # Submodulos git para cada projeto de pesquisa
-├── bibliografia/               # Corpus de referências bibliográficas organizadas
-│   ├── livros/                # Livros e monografias
-│   ├── artigos/               # Artigos de periódicos e conferências
-│   ├── teses/                 # Dissertações e teses
-│   ├── preprints/             # Preprints e working papers
-│   └── relatorios/            # Relatórios técnicos
-├── inbox/                     # Referências não processadas para triagem
-├── research-output/           # Resultados de pesquisas executadas
-├── tools/                     # Scripts e utilitários para processamento
-└── RESEARCH_PLAN.md          # Planejamento estratégico de pesquisa
+├── AGENTS.md
+├── projects/                         # cada projeto é um submódulo Git
+├── bibliografia/
+│   ├── AGENTS.md
+│   ├── livros/
+│   ├── artigos/
+│   ├── teses/
+│   ├── preprints/
+│   └── relatorios/
+├── inbox/
+│   ├── AGENTS.md
+│   └── quarantine/
+├── research-output/
+│   ├── AGENTS.md
+│   ├── projects/
+│   └── shared/
+└── tools/
+    ├── AGENTS.md
+    ├── scripts/
+    ├── templates/
+    └── logs/
 ```
 
-## 🤖 Workflow de Pesquisa com Agentes
+## Regras centrais
 
-### 1. Coleta e Processamento de Referências
-- **Inbox**: Novas referências adicionadas sem classificação
-- **Agents**: `ai-engineer` + `trend-researcher` processam e indexam
-- **Output**: Referências catalogadas em `bibliografia/`
+- Todo projeto novo entra em `projects/` como submódulo.
+- Toda referência nova entra primeiro em `inbox/`.
+- Toda referência processada vai para `bibliografia/<categoria>/`.
+- Todo entregável consolidado vai para `research-output/`.
+- Cada pasta operacional possui seu próprio `AGENTS.md`.
 
-### 2. Design de Estudos
-- **Input**: Projetos em `projects/` com research briefs
-- **Agents**: `ai-engineer` + `project-shepherd` + `ux-researcher`
-- **Output**: Planos de pesquisa e metodologias
+## Fluxo recomendado
 
-### 3. Análise e Síntese
-- **Input**: Corpus bibliográfico + research briefs
-- **Agents**: `ai-engineer` (RAG/NLP) + `analytics-reporter` + `feedback-synthesizer`
-- **Output**: Sínteses, insights e relatórios em `research-output/`
+1. Coloque material novo em `inbox/`.
+2. Processe, classifique e deduplique contra `bibliografia/`.
+3. Trabalhe o escopo e a execução dentro do submódulo em `projects/<project-slug>/`.
+4. Publique sínteses, drafts e versões finais em `research-output/projects/<project-slug>/`.
+5. Use `research-output/shared/` para artefatos transversais.
 
-### 4. Validação e Iteração
-- **Input**: Drafts de resultados
-- **Agents**: `reality-checker` + `code-reviewer` (para metodologia)
-- **Output**: Research-ready papers
+## Skills previstas
 
-## 🎯 Cada Módulo tem:
+As instruções locais já foram preparadas para priorizar estas skills:
+- `agents-orchestrator`
+- `senior-project-manager`
+- `ai-engineer`
+- `trend-researcher`
+- `analytics-reporter`
+- `feedback-synthesizer`
+- `reality-checker`
 
-- **AGENTS.md**: Instruções específicas para agentes naquele contexto
-- **INDEX.md**: Inventário e metadata de conteúdo (quando aplicável)
-- **README.md**: Documentação e convenções locais (quando complexo)
+## Convenções
 
-## 🚀 Início Rápido
-
-### Adicionar Nova Referência
-```bash
-# 1. Coloque o arquivo em inbox/
-cp paper.pdf research/inbox/
-
-# 2. Execute processamento
-# Agentes lerão AGENTS.md em inbox/ e processarão automaticamente
-```
-
-### Criar Novo Projeto
-```bash
-# 1. Adicione submodulo git em projects/
-git submodule add <url> projects/meu-projeto
-
-# 2. Crie research brief em projects/meu-projeto/RESEARCH_BRIEF.md
-# 3. Agentes lerão contexto e referências relevantes para execução
-```
-
-### Executar Pesquisa
-```bash
-# Agentes-orchestrator lê AGENTS.md em todos os módulos
-# Coordena pipeline de análise bibliográfica
-# Gera outputs em research-output/
-```
-
-## 📚 Guias por Módulo
-
-- [Projects](./projects/AGENTS.md) - Gestão de subprojetos
-- [Bibliografia](./bibliografia/AGENTS.md) - Corpus bibliográfico
-- [Inbox](./inbox/AGENTS.md) - Triagem de referências
-- [Research Output](./research-output/AGENTS.md) - Gestão de resultados
-
-## 🔗 Skills Integradas
-
-Este projeto usa os seguintes agentes especializados:
-
-- **ai-engineer**: Processamento de dados, indexação, RAG systems
-- **project-shepherd**: Coordenação de projetos e timelines
-- **analytics-reporter**: Análise de dados bibliográficos
-- **trend-researcher**: Identificação de tendências em pesquisa
-- **feedback-synthesizer**: Síntese de múltiplas fontes
-- **agents-orchestrator**: Orquestração do pipeline completo
-- **reality-checker**: Validação de metodologias e qualidade
-- **ux-researcher**: Estrutura de estudos empíricos
-
-## 📝 Convenções
-
-- Nomes de arquivos: `snake_case` para dados, `PascalCase` para projetos
-- Metadata: YAML front matter em .md para indexação
-- Referências: Usar BibTeX quando possível para compatibilidade
-- Versionamento: Git para controle, com commits granulares
-
----
-
-**Última atualização**: 2026-03-18
-**Mantido por**: Research Team + AI Agents
+- Slugs de projeto em `kebab-case`.
+- Identificadores bibliográficos em `author_year_slug`.
+- Referências processadas devem ter, quando aplicável, arquivo original + `.md` + `.bib`.
+- Outputs devem manter vínculo explícito com o projeto ou corpus de origem.
