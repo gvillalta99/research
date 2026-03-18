@@ -4,3 +4,5 @@
 {"run":3,"commit":"SplitFi","metric":409,"metrics":{},"status":"discard","description":"Split sentences by newline and exact markers but performed worse","timestamp":1773847502161,"segment":0}
 {"run":4,"commit":"4e592c6","metric":2411,"metrics":{},"status":"keep","description":"Improved sentence boundaries and chunking for longer sentences","timestamp":1773847788515,"segment":0}
 {"run":5,"commit":"AddScol","metric":2411,"metrics":{},"status":"discard","description":"Split by semicolons but no metric change","timestamp":1773847972118,"segment":0}
+{"run":6,"commit":"e225e5b","metric":2494,"metrics":{},"status":"keep","description":"Smaller chunk size and stride for long sentences","timestamp":1773848148749,"segment":0}
+{"run":7,"commit":"WinMrkr","metric":2488,"metrics":{},"status":"discard","description":"Extracted windows around each marker instead of fixed chunks, slightly worse","timestamp":1773848329801,"segment":0}
