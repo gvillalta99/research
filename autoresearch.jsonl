@@ -24,3 +24,4 @@
 {"run":22,"commit":"SlidWin","metric":1228,"metrics":{},"status":"discard","description":"Used sliding window approach but produced fewer claims than anchoring","timestamp":1773851689565,"segment":1}
 {"run":23,"commit":"a8d930e","metric":3503,"metrics":{},"status":"keep","description":"Restored the Maximum Window Anchoring algorithm which extracted 3503 claims","timestamp":1773852117688,"segment":1}
 {"type":"config","name":"Claims Structuring Optimization","metricName":"structured_claims","metricUnit":"","bestDirection":"higher"}
+{"run":24,"commit":"e5ec21a","metric":8,"metrics":{},"status":"keep","description":"Baseline parsing using basic heuristic for players and strategies","timestamp":1773852531171,"segment":2}
