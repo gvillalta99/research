@@ -1,0 +1,92 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data & Logs
+*.log
+logs/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+*~
+*.bak
+
+# PDFs (too large for git) - store separately
+# *.pdf  <- uncomment if managing PDFs separately
+
+# Large files
+*.tar.gz
+*.zip
+*.rar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Specific to research repo
+research-output/**/*.cache
+tools/notebooks/.ipynb_checkpoints/
+tools/logs/*.log
+inbox/quarantine/**/*
+bibliography/**/*.tmp
+
+# Keep directories even when empty
+!*/.gitkeep
+!*/README.md
+
+# Except: 
+# - Keep documentation files
+!**/*.md
+!**/AGENTS.md
