@@ -18,3 +18,4 @@
 {"type":"config","name":"High Quality Claims Extraction","metricName":"high_quality_claims","metricUnit":"","bestDirection":"higher"}
 {"run":17,"commit":"bd9e02f","metric":1538,"metrics":{},"status":"keep","description":"Baseline for high quality claims requiring both strategic and causal markers","timestamp":1773850371595,"segment":1}
 {"run":18,"commit":"ebe3295","metric":1883,"metrics":{},"status":"keep","description":"Explicitly anchored extraction on pairs of strategic and causal markers within 40 words","timestamp":1773850550884,"segment":1}
+{"run":19,"commit":"8dcfaa8","metric":3080,"metrics":{},"status":"keep","description":"Expanded marker lists to extract more combinations","timestamp":1773851157806,"segment":1}
