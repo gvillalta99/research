@@ -6,3 +6,7 @@
 {"run":5,"commit":"AddScol","metric":2411,"metrics":{},"status":"discard","description":"Split by semicolons but no metric change","timestamp":1773847972118,"segment":0}
 {"run":6,"commit":"e225e5b","metric":2494,"metrics":{},"status":"keep","description":"Smaller chunk size and stride for long sentences","timestamp":1773848148749,"segment":0}
 {"run":7,"commit":"WinMrkr","metric":2488,"metrics":{},"status":"discard","description":"Extracted windows around each marker instead of fixed chunks, slightly worse","timestamp":1773848329801,"segment":0}
+{"run":8,"commit":"ef1c195","metric":7192,"metrics":{},"status":"keep","description":"Sliding window over entire text to bypass broken sentence punctuation","timestamp":1773848509863,"segment":0}
+{"run":9,"commit":"Stride5","metric":12335,"metrics":{},"status":"discard","description":"Reduced stride to 5, increased metric but overfits/cheats by generating almost identical claims","timestamp":1773848751232,"segment":0}
+{"run":10,"commit":"SemChun","metric":4267,"metrics":{},"status":"discard","description":"Semantic phrase chunking extracted 4267 natural claims, less than sliding window but better quality","timestamp":1773848991834,"segment":0}
+{"run":11,"commit":"Chunk30","metric":6743,"metrics":{},"status":"discard","description":"Reduced chunk size to 30, extracted fewer claims","timestamp":1773849293141,"segment":0}
