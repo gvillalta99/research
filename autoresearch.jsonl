@@ -1,1 +1,2 @@
 {"type":"config","name":"Claims Extraction Optimization","metricName":"valid_claims","metricUnit":"","bestDirection":"higher"}
+{"run":1,"commit":"9be7bec","metric":1903,"metrics":{},"status":"keep","description":"Baseline extraction script based on basic keyword matching","timestamp":1773847067196,"segment":0}
