@@ -1,2 +1,4 @@
 {"type":"config","name":"Claims Extraction Optimization","metricName":"valid_claims","metricUnit":"","bestDirection":"higher"}
 {"run":1,"commit":"9be7bec","metric":1903,"metrics":{},"status":"keep","description":"Baseline extraction script based on basic keyword matching","timestamp":1773847067196,"segment":0}
+{"run":2,"commit":"ebc70e3","metric":1910,"metrics":{},"status":"keep","description":"Added more causal, strategic, and systemic keywords to the extraction heuristic","timestamp":1773847314787,"segment":0}
+{"run":3,"commit":"SplitFi","metric":409,"metrics":{},"status":"discard","description":"Split sentences by newline and exact markers but performed worse","timestamp":1773847502161,"segment":0}
