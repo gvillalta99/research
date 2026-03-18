@@ -22,3 +22,5 @@
 {"run":20,"commit":"1d3e82b","metric":3503,"metrics":{},"status":"keep","description":"Increased search window to 46 words, catching more dispersed marker pairs","timestamp":1773851330403,"segment":1}
 {"run":21,"commit":"NatSent","metric":1334,"metrics":{},"status":"discard","description":"Extracted natural sentences but resulted in fewer claims because sentences are often too long or markers are across larger boundaries","timestamp":1773851518132,"segment":1}
 {"run":22,"commit":"SlidWin","metric":1228,"metrics":{},"status":"discard","description":"Used sliding window approach but produced fewer claims than anchoring","timestamp":1773851689565,"segment":1}
+{"run":23,"commit":"a8d930e","metric":3503,"metrics":{},"status":"keep","description":"Restored the Maximum Window Anchoring algorithm which extracted 3503 claims","timestamp":1773852117688,"segment":1}
+{"type":"config","name":"Claims Structuring Optimization","metricName":"structured_claims","metricUnit":"","bestDirection":"higher"}
