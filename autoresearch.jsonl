@@ -2,3 +2,5 @@
 {"run":1,"commit":"9be7bec","metric":1903,"metrics":{},"status":"keep","description":"Baseline extraction script based on basic keyword matching","timestamp":1773847067196,"segment":0}
 {"run":2,"commit":"ebc70e3","metric":1910,"metrics":{},"status":"keep","description":"Added more causal, strategic, and systemic keywords to the extraction heuristic","timestamp":1773847314787,"segment":0}
 {"run":3,"commit":"SplitFi","metric":409,"metrics":{},"status":"discard","description":"Split sentences by newline and exact markers but performed worse","timestamp":1773847502161,"segment":0}
+{"run":4,"commit":"4e592c6","metric":2411,"metrics":{},"status":"keep","description":"Improved sentence boundaries and chunking for longer sentences","timestamp":1773847788515,"segment":0}
+{"run":5,"commit":"AddScol","metric":2411,"metrics":{},"status":"discard","description":"Split by semicolons but no metric change","timestamp":1773847972118,"segment":0}
