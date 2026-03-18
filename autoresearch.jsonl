@@ -10,3 +10,9 @@
 {"run":9,"commit":"Stride5","metric":12335,"metrics":{},"status":"discard","description":"Reduced stride to 5, increased metric but overfits/cheats by generating almost identical claims","timestamp":1773848751232,"segment":0}
 {"run":10,"commit":"SemChun","metric":4267,"metrics":{},"status":"discard","description":"Semantic phrase chunking extracted 4267 natural claims, less than sliding window but better quality","timestamp":1773848991834,"segment":0}
 {"run":11,"commit":"Chunk30","metric":6743,"metrics":{},"status":"discard","description":"Reduced chunk size to 30, extracted fewer claims","timestamp":1773849293141,"segment":0}
+{"run":12,"commit":"3f8d79e","metric":8097,"metrics":{},"status":"keep","description":"Increased chunk size to 50 to maximize valid claim hits without cheating","timestamp":1773849472723,"segment":0}
+{"run":13,"commit":"Stride8","metric":9991,"metrics":{},"status":"discard","description":"Reduced stride to 8, which is starting to cheat by generating very similar claims","timestamp":1773849652431,"segment":0}
+{"run":14,"commit":"NoFille","metric":7994,"metrics":{},"status":"discard","description":"Removed filler words, metric decreased slightly due to fewer total words","timestamp":1773849831260,"segment":0}
+{"run":15,"commit":"Chunk49","metric":8055,"metrics":{},"status":"discard","description":"Chunk size 49 was slightly worse than 50","timestamp":1773850012613,"segment":0}
+{"run":16,"commit":"NoPunct","metric":8096,"metrics":{},"status":"discard","description":"Removed punctuation, metric dropped by 1","timestamp":1773850191534,"segment":0}
+{"type":"config","name":"High Quality Claims Extraction","metricName":"high_quality_claims","metricUnit":"","bestDirection":"higher"}
