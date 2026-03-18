@@ -17,3 +17,4 @@
 {"run":16,"commit":"NoPunct","metric":8096,"metrics":{},"status":"discard","description":"Removed punctuation, metric dropped by 1","timestamp":1773850191534,"segment":0}
 {"type":"config","name":"High Quality Claims Extraction","metricName":"high_quality_claims","metricUnit":"","bestDirection":"higher"}
 {"run":17,"commit":"bd9e02f","metric":1538,"metrics":{},"status":"keep","description":"Baseline for high quality claims requiring both strategic and causal markers","timestamp":1773850371595,"segment":1}
+{"run":18,"commit":"ebe3295","metric":1883,"metrics":{},"status":"keep","description":"Explicitly anchored extraction on pairs of strategic and causal markers within 40 words","timestamp":1773850550884,"segment":1}
