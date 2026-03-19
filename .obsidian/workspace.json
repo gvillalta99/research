@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "195fa332afdcf4e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "17b770ac876b6f24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "672c0ab0533610bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "consolidado_final_jiang_x_bibliografia"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b6f93761b91e6da9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c3af7c8eb09aefa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6dc17a0b0c1c83fc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "f959245b49917eb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "2eb99085d07ff246",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 380.5
+  },
+  "right": {
+    "id": "362db465dceb2a1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d4e92abbc0a5783",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "119c97edcc357ce9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para consolidado_final_jiang_x_bibliografia"
+            }
+          },
+          {
+            "id": "fd798e082c15fee9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para consolidado_final_jiang_x_bibliografia"
+            }
+          },
+          {
+            "id": "f64b98a1b5772bc2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "e0c125bbc99bbf6b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "47474d95ac09e366",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de consolidado_final_jiang_x_bibliografia"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "672c0ab0533610bf",
+  "lastOpenFiles": [
+    "tools/logs/moc_pipeline/state/bibliografia_livros_world_systems_analysis_an_introduction_immanuel_wall/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_world_systems_analysis_an_introduction_immanuel_wall/progress.json",
+    "tools/logs/moc_pipeline/20260319_bibliografia_livros_world_systems_analysis_an_introduction_immanuel_wall.log",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_world_systems_analysis_an_introduction_immanuel_wall",
+    "bibliografia/livros/MOC_-_the_world_system_and_africa_immanuel_wallerstein.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_world_system_and_africa_immanuel_wallerstein_epu/final_moc.md",
+    "tools/scripts/generate_mocs.py~",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_world_system_and_africa_immanuel_wallerstein_epu/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_world_system_and_africa_immanuel_wallerstein_epu/progress.json",
+    "tools/logs/moc_pipeline/20260319_bibliografia_livros_the_world_system_and_africa_immanuel_wallerstein_epu.log",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_world_system_and_africa_immanuel_wallerstein_epu",
+    "bibliografia/livros/MOC_-_the_modern_world_system_3_immanuel_wallerstein.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_3_immanuel_wallerstein_epub/final_moc.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_3_immanuel_wallerstein_epub/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_3_immanuel_wallerstein_epub/progress.json",
+    "tools/logs/moc_pipeline/20260319_bibliografia_livros_the_modern_world_system_3_immanuel_wallerstein_epub.log",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_3_immanuel_wallerstein_epub",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_2_immanuel_wallerstein_epub/dossier.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/INDEX.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/analysis/cruzamento_relatorios_com_bibliografia.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
+    "bibliografia/livros/MOC_-_historical_capitalism_immanuel_wallerstein_wallerstein_etc.md",
+    "bibliografia/livros/MOC_-_the_modern_world_system_1_capitalist_agriculture_and_the_origins_of_the.md",
+    "bibliografia/livros/MOC_-_the_modern_world_system_4_centrist_liberalism_triumphant_1789_1914_imman.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_long_twentieth_century_money_power_and_the_origi/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_1_capitalist_agriculture_and/final_moc.md",
+    "bibliografia/livros/MOC_-_golpe_en_brasil.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_1_capitalist_agriculture_and/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_4_centrist_liberalism_triump/final_moc.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/analysis/plano_lacunas_bibliograficas_jiang.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_the_modern_world_system_4_centrist_liberalism_triump/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_historical_capitalism_immanuel_wallerstein_wallerste/final_moc.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_historical_capitalism_immanuel_wallerstein_wallerste/dossier.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_golpe_en_brasil_pdf/final_moc.md",
+    "tools/logs/moc_pipeline/state/bibliografia_livros_golpe_en_brasil_pdf/dossier.md",
+    "bibliografia/MOC-PROMPT.md"
+  ]
+}
