@@ -1,0 +1,4 @@
+[submodule "projects/predictivehistory-future-predictions-analysis"]
+	path = projects/predictivehistory-future-predictions-analysis
+	url = /home/gustavo/src/gvillalta99/project-repos/predictivehistory-future-predictions-analysis.git
+	branch = main

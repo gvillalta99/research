@@ -430,48 +430,66 @@ def pdf_chunks(
     total_pages = int(meta.get("Pages", "0") or "0")
     chunks: List[Chunk] = []
     idx = 1
+
+    page_windows: List[Tuple[int, int, str]] = []
     for start in range(1, total_pages + 1, chunk_pages):
         end = min(start + chunk_pages - 1, total_pages)
         text = extract_pdf_text_range(path, start, end)
-        if not text:
-            continue
-        if len(text) <= max_chars:
-            chunks.append(Chunk(index=idx, label=f"pages {start}-{end}", text=text))
-            idx += 1
-            continue
-        # secondary split by paragraphs for huge chunks
-        paras = re.split(r"\n\s*\n", text)
-        buf: List[str] = []
-        buf_len = 0
-        sub = 1
-        for para in paras:
-            piece = para.strip()
-            if not piece:
-                continue
-            if buf and buf_len + len(piece) + 2 > max_chars:
-                chunks.append(
-                    Chunk(
-                        index=idx,
-                        label=f"pages {start}-{end} part {sub}",
-                        text="\n\n".join(buf),
-                    )
-                )
-                idx += 1
-                sub += 1
-                buf = [piece]
-                buf_len = len(piece)
-            else:
-                buf.append(piece)
-                buf_len += len(piece) + 2
-        if buf:
+        if text:
+            page_windows.append((start, end, text))
+
+    buffer_texts: List[str] = []
+    buffer_len = 0
+    buffer_start: Optional[int] = None
+    buffer_end: Optional[int] = None
+
+    def flush_buffer() -> None:
+        nonlocal idx, buffer_texts, buffer_len, buffer_start, buffer_end
+        if not buffer_texts or buffer_start is None or buffer_end is None:
+            return
+        combined = "\n\n".join(buffer_texts).strip()
+        if len(combined) <= max_chars:
             chunks.append(
-                Chunk(
-                    index=idx,
-                    label=f"pages {start}-{end} part {sub}",
-                    text="\n\n".join(buf),
-                )
+                Chunk(index=idx, label=f"pages {buffer_start}-{buffer_end}", text=combined)
             )
             idx += 1
+        else:
+            parts = split_text_for_budget(combined, max_chars)
+            for part_no, part in enumerate(parts, start=1):
+                label = f"pages {buffer_start}-{buffer_end}"
+                if len(parts) > 1:
+                    label += f" part {part_no}"
+                chunks.append(Chunk(index=idx, label=label, text=part))
+                idx += 1
+        buffer_texts = []
+        buffer_len = 0
+        buffer_start = None
+        buffer_end = None
+
+    for start, end, text in page_windows:
+        text_len = len(text)
+        if text_len > max_chars:
+            flush_buffer()
+            parts = split_text_for_budget(text, max_chars)
+            for part_no, part in enumerate(parts, start=1):
+                label = f"pages {start}-{end}"
+                if len(parts) > 1:
+                    label += f" part {part_no}"
+                chunks.append(Chunk(index=idx, label=label, text=part))
+                idx += 1
+            continue
+
+        if buffer_texts and buffer_len + text_len + 2 > max_chars:
+            flush_buffer()
+
+        if not buffer_texts:
+            buffer_start = start
+        buffer_texts.append(text)
+        buffer_len += text_len + 2
+        buffer_end = end
+
+    flush_buffer()
+
     return chunks, {
         "title": meta.get("Title") or path.stem,
         "author": meta.get("Author") or "Autor não identificado",

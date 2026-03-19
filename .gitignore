@@ -90,3 +90,6 @@ bibliography/**/*.tmp
 # - Keep documentation files
 !**/*.md
 !**/AGENTS.md
+*.pdf
+*.epub
+*.djvu
