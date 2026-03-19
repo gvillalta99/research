@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/literature-review/revisao_literatura_dialogo_jiang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "resumo_executivo_jiang_x_bibliografia"
+              "title": "revisao_literatura_dialogo_jiang"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/literature-review/revisao_literatura_dialogo_jiang.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para resumo_executivo_jiang_x_bibliografia"
+              "title": "Links inversos para revisao_literatura_dialogo_jiang"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/literature-review/revisao_literatura_dialogo_jiang.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para resumo_executivo_jiang_x_bibliografia"
+              "title": "Links de saída para revisao_literatura_dialogo_jiang"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
+                "file": "research-output/projects/jiang_game_theory_classes_analysis/literature-review/revisao_literatura_dialogo_jiang.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de resumo_executivo_jiang_x_bibliografia"
+              "title": "Sumário de revisao_literatura_dialogo_jiang"
             }
           }
         ]
@@ -183,31 +183,32 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "672c0ab0533610bf",
+  "active": "6dc17a0b0c1c83fc",
   "lastOpenFiles": [
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/J4HTFJWl5D8.en.vtt",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/J4HTFJWl5D8.en.vtt.part",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/J4HTFJWl5D8.en-orig.vtt",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/J4HTFJWl5D8.en-orig.vtt.part",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/QwfB-vXXKWU.en.vtt",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/QwfB-vXXKWU.en.vtt.part",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/QwfB-vXXKWU.en-orig.vtt",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/QwfB-vXXKWU.en-orig.vtt.part",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/677rmlRgvLQ.en.vtt",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/677rmlRgvLQ.en.vtt.part",
-    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/677rmlRgvLQ.en-orig.vtt",
+    "research-output/projects/predictivehistory-future-predictions-analysis/analysis/predictivehistory_future_predictions_table.md",
+    "research-output/projects/predictivehistory-future-predictions-analysis/analysis/predictivehistory_future_predictions_report.md",
+    "docs/plans",
+    "docs",
+    "research-output/projects/jiang_game_theory_classes_analysis/literature-review/cruzamento_relatorios_com_bibliografia.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/evidence/matriz_ideias_jiang_x_bibliografia.md",
+    "research-output/projects/jiang_game_theory_classes_analysis/final/consolidado_final_jiang_x_bibliografia.md",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/Gp9Hv1PXx0o.en.vtt",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/Gp9Hv1PXx0o.en.vtt.part",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/Gp9Hv1PXx0o.en-orig.vtt",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/Gp9Hv1PXx0o.en-orig.vtt.part",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/xEEpOxqdU5E.en.vtt",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/xEEpOxqdU5E.en.vtt.part",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/xEEpOxqdU5E.en-orig.vtt",
+    "inbox/predictivehistory-future-predictions-analysis/youtube/raw_subtitles/xEEpOxqdU5E.en-orig.vtt.part",
     "inbox/predictivehistory-future-predictions-analysis/youtube/channel_manifest_summary.md",
     "inbox/predictivehistory-future-predictions-analysis/PROCESSING_LOG.md",
     "research-output/projects/predictivehistory-future-predictions-analysis/INDEX.md",
     "research-output/projects/jiang_game_theory_classes_analysis/README.md",
     "research-output/projects/jiang_game_theory_classes_analysis/INDEX.md",
     "research-output/projects/jiang_game_theory_classes_analysis/analysis/cruzamento_relatorios_com_bibliografia.md",
-    "research-output/projects/jiang_game_theory_classes_analysis/literature-review/cruzamento_relatorios_com_bibliografia.md",
     "research-output/projects/jiang_game_theory_classes_analysis/literature-review/revisao_literatura_dialogo_jiang.md",
-    "research-output/projects/jiang_game_theory_classes_analysis/final/consolidado_final_jiang_x_bibliografia.md",
-    "research-output/projects/jiang_game_theory_classes_analysis/executive-summary/resumo_executivo_jiang_x_bibliografia.md",
     "research-output/projects/jiang_game_theory_classes_analysis/roadmap/plano_lacunas_bibliograficas_jiang.md",
-    "research-output/projects/jiang_game_theory_classes_analysis/evidence/matriz_ideias_jiang_x_bibliografia.md",
     "research-output/projects/jiang_game_theory_classes_analysis/analysis/consolidado_final_jiang_x_bibliografia.md",
     "research-output/projects/jiang_game_theory_classes_analysis/analysis/relatorio_taxonomia_afirmacoes_jiang.md",
     "bibliografia/livros/MOC_-_zlib_pub_encyclopedia_of_global_studies.md",
@@ -219,7 +220,6 @@
     "bibliografia/livros/MOC_-_the_modern_world_system_2_immanuel_wallerstein.md",
     "tools/logs/moc_pipeline/state/bibliografia_livros_zlib_pub_encyclopedia_of_health_and_behavior_pdf/dossier.md",
     "tools/logs/moc_pipeline/state/bibliografia_livros_zlib_pub_encyclopedia_of_global_studies_pdf/final_moc.md",
-    "tools/logs/moc_pipeline/state/bibliografia_livros_zlib_pub_encyclopedia_of_global_studies_pdf/dossier.md",
-    "tools/logs/moc_pipeline/state/bibliografia_livros_zlib_pub_encyclopedia_of_disability_pdf/final_moc.md"
+    "tools/logs/moc_pipeline/state/bibliografia_livros_zlib_pub_encyclopedia_of_global_studies_pdf/dossier.md"
   ]
 }
