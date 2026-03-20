@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PredictiveHistory — Future Forecast Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Research Output / Explorer</p>
+        <h1>PredictiveHistory<br />Future Forecast Explorer</h1>
+        <p class="lede">
+          Um painel editorial para navegar pelas previsões de futuro extraídas do canal
+          PredictiveHistory, comparar status originais versus validação factual e explorar
+          temas, vídeos e evidências.
+        </p>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel filters">
+        <div>
+          <p class="section-kicker">Filtrar</p>
+          <label class="field">
+            <span>Busca livre</span>
+            <input id="searchInput" type="search" placeholder="tema, vídeo, previsão, evidência" />
+          </label>
+        </div>
+
+        <div class="stack">
+          <label class="field">
+            <span>Status efetivo</span>
+            <select id="statusFilter"></select>
+          </label>
+          <label class="field">
+            <span>Status original</span>
+            <select id="originalStatusFilter"></select>
+          </label>
+          <label class="field">
+            <span>Tema normalizado</span>
+            <select id="themeFilter"></select>
+          </label>
+          <label class="field">
+            <span>Somente itens validados</span>
+            <select id="validatedFilter">
+              <option value="all">Todos</option>
+              <option value="validated">Somente validados</option>
+              <option value="not_validated">Somente não validados</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Ordenação</span>
+            <select id="sortFilter">
+              <option value="effective_status">Status efetivo</option>
+              <option value="theme">Tema</option>
+              <option value="title">Título do vídeo</option>
+              <option value="confidence">Confiança</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="legend-box">
+          <p class="section-kicker">Leitura</p>
+          <ul>
+            <li><strong>Original:</strong> classificação inicial do modelo.</li>
+            <li><strong>Efetivo:</strong> status final após validação factual, quando houver.</li>
+            <li><strong>Mismatch:</strong> casos onde a validação alterou o veredito original.</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="panel metrics" id="metricCards"></div>
+
+        <div class="panel charts">
+          <div>
+            <p class="section-kicker">Status efetivo</p>
+            <div id="statusBars" class="bar-list"></div>
+          </div>
+          <div>
+            <p class="section-kicker">Temas dominantes</p>
+            <div id="themeBars" class="bar-list"></div>
+          </div>
+        </div>
+
+        <div class="panel split">
+          <div>
+            <p class="section-kicker">Vídeos com mais previsões</p>
+            <div id="topVideos" class="video-list"></div>
+          </div>
+          <div>
+            <p class="section-kicker">Amostra de divergências</p>
+            <div id="mismatchList" class="video-list"></div>
+          </div>
+        </div>
+
+        <div class="panel table-panel">
+          <div class="table-header">
+            <div>
+              <p class="section-kicker">Base explorável</p>
+              <h2 id="resultCount">0 itens</h2>
+            </div>
+            <button id="resetFilters" class="ghost-button">Limpar filtros</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Previsão</th>
+                  <th>Vídeo</th>
+                  <th>Tema</th>
+                  <th>Status</th>
+                  <th>Validação</th>
+                  <th>Bibliografia</th>
+                </tr>
+              </thead>
+              <tbody id="resultsTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="detailDialog" class="detail-dialog">
+      <button id="closeDialog" class="close-dialog">×</button>
+      <div id="detailContent"></div>
+    </dialog>
+
+    <script src="./predictions-explorer-data.js"></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+   </section>
+    </main>
+
+    <dialog id="detailDialog" class="detail-dialog">
+      <button id="closeDialog" class="close-dialog">×</button>
+      <div id="detailContent"></div>
+    </dialog>
+
+    <script src="./predictions-explorer-data.js"></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
