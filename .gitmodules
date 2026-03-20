@@ -2,3 +2,7 @@
 	path = projects/predictivehistory-future-predictions-analysis
 	url = /home/gustavo/src/gvillalta99/project-repos/predictivehistory-future-predictions-analysis.git
 	branch = main
+[submodule "projects/jiang-news-forecast-agent"]
+	path = projects/jiang-news-forecast-agent
+	url = /home/gustavo/src/gvillalta99/project-repos/jiang-news-forecast-agent.git
+	branch = main
