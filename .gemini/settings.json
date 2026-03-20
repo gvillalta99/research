@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "exa": {
+      "httpUrl": "https://mcp.exa.ai/mcp",
+      "headers": {
+        "Accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}
